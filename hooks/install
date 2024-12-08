@@ -1,0 +1,14 @@
+#!/bin/bash
+
+build() {
+    add_file /etc/mkinitcpio-banner
+    add_runscript
+}
+
+help() {
+    cat <<HELPEOF
+This hook prints a message during startup. For example, you might put your
+contact details there in case your device is lost so that a finder can get your
+stuff back to you.
+HELPEOF
+}
